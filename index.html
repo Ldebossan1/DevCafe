@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCafé</title>
+</head>
+
+<body>
+    <header>
+        <h1>DevCafé</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Quem somos?</h2>
+        <p><strong>Café forte, Wi-Fi estável e muito código.</strong> <br>
+
+            O devCafé nasceu da ideia de que as melhores soluções de software não surgem apenas de frente para as
+            telas,
+            mas também nas pausas para um bom café e nas trocas de ideias com outros apaixonados por tecnologia.
+            <br>
+
+            Nós somos mais do que uma cafeteria: somos um espaço de acolhimento e produtividade pensado de
+            desenvolvedores para desenvolvedores (e designers, gamers, criativos e entusiastas!). Aqui, o café é
+            especial, a internet é de ultravelocidade e cada detalhe — das mesas com tomadas individuais aos
+            "commits"
+            no cardápio — foi planejado para manter o seu fluxo criativo ativo e sem interrupções. <br>
+
+            Quer você precise de um lugar silencioso para focar naquele deploy de sexta-feira, queira fazer um
+            networking no meio da tarde ou simplesmente deseje saborear um expresso enquanto debate as melhores
+            práticas
+            de programação, o devCafé é o seu ponto de encontro oficial. <br>
+
+            Traga seu notebook, escolha seu cantinho e sinta-se em casa. <br>
+        </p>
+        <img src="./assets/DevCafeImage.jpg" alt="Hall-DevCafe" width="400">
+    </section>
+
+    <section id="menu">
+        <h2>Cardápio:</h2>
+        <article>
+            <h3>Deploy Matinal (Sanduíche Artesanal no Croissant)</h3>
+            <p>Croissant amanteigado na chapa recheado com ovos mexidos cremosos, bacon crocante, queijo cheddar
+                derretido e um toque de cebolinha. Ideal para comer com uma mão enquanto o código compila.
+            </p>
+            <strong>R$ 39,90</strong>
+            <button popovertarget="nutricionalTable1">
+                <p>Tabela nutricional:</p>
+            </button>
+        </article>
+
+        <article>
+            <h3>Stack Completo (Torrada Petrópolis com Abacate e Salmão):</h3>
+            <p>Fatia generosa de pão de fermentação natural tostado, pasta de abacate temperada com limão e
+                pimenta-do-reino, fatias de salmão defumado, ovo poché e sementes de gergelim.
+            </p>
+            <strong>R$ 59,90</strong>
+            <button popovertarget="nutricionalTable2">
+                <p>Tabela nutricional:</p>
+            </button>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Fale conosco/Faça uma reserva:</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com">
+            <select name="reservation" id="reservation">
+                <option value="morning">Manhã</option>
+                <option value="afternoon">Tarde</option>
+            </select>
+            <label for="date">Data da reserva</label>
+            <input type="date" name="reservationDate" id="date" min="2026-11-13" max="2026-12-12">
+            <label for="reservationObservations">Observações sobre a mesa:</label>
+            <textarea name="observations" id="reservationObservations"
+                placeholder="Observações sobre a mesa, exemplo: Local, cadeiras, tomada próxima..."></textarea>
+            <button onclick="alert('Reserva concluída.')">Reservar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; <span>Lucas Cavalheiro</span>
+    </footer>
+
+    <dialog id="nutricionalTable1" popover>
+
+        <table>
+            <h3>Tabela Nutricional - Deploy Matinal</h3>
+            <thead>
+                <tr>
+                    <th scope="col">Valor Energético:</th>
+                    <th scope="col">Carboidratos:</th>
+                    <th scope="col">Proteínas:</th>
+                    <th scope="col">Gorduras totais:</th>
+                    <th scope="col">Gorduras Saturadas:</th>
+                    <th scope="col">Fibras Alimentares:</th>
+                    <th scope="col">Sódio:</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td scope="row">540 kcal</td>
+                    <td scope="row">34 g</td>
+                    <td scope="row">22 g</td>
+                    <td scope="row">35 g</td>
+                    <td scope="row">16 g</td>
+                    <td scope="row">2 g</td>
+                    <td scope="row">890 mg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button popovertarget="nutricionalTable1" popovertargetaction="hide">
+            Fechar
+        </button>
+    </dialog>
+
+    <dialog id="nutricionalTable2" popover>
+
+        <table>
+            <h3>Tabela Nutricional - Stack Completo</h3>
+            <thead>
+                <tr>
+                    <th scope="col">Valor Energético:</th>
+                    <th scope="col">Carboidratos:</th>
+                    <th scope="col">Proteínas:</th>
+                    <th scope="col">Gorduras totais:</th>
+                    <th scope="col">Gorduras Saturadas:</th>
+                    <th scope="col">Fibras Alimentares:</th>
+                    <th scope="col">Sódio:</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td scope="row">480 kcal</td>
+                    <td scope="row">38 g</td>
+                    <td scope="row">26 g</td>
+                    <td scope="row">25 g</td>
+                    <td scope="row">5 g</td>
+                    <td scope="row">7 g</td>
+                    <td scope="row">620 mg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button popovertarget="nutricionalTable2" popovertargetaction="hide">
+            Fechar
+        </button>
+    </dialog>
+</body>
+<style>
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+</html>
