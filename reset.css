@@ -1,0 +1,20 @@
+/* Reseta margens e define o cálculo correto do Box Model */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* Um bege clarinho, cor de café com leite */
+    color: gray;
+    /* Marrom escuro para o texto, simulando café */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./assets/BackgroundImg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* Isso mantém o fundo estático ao rolar a página, fica incrível! */
+    background-position: center;
+}
